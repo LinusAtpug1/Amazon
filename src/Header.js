@@ -1,12 +1,12 @@
 import React from 'react'
 import './Header.css'
 import SearchIcon from '@material-ui/icons/Search';
-
+import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 function Header() {
   return (
     <div className="header">
 
-        <img className="header_logo" src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" />
+        <img className="header_logo" src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="" />
         <div className="header_search">
           <input className="header_searchInput" type="text" />
           <SearchIcon className="header_searchIcon" />
@@ -32,9 +32,9 @@ function Header() {
 
           </div>
 
-          <div className="header_option">
-            <span className="header_optionLineFour">Basket</span>
-            <span className="header_optionLineFour">count</span>
+          <div className="header_optionBasket">
+            <ShoppingBasketIcon />
+            <span className="header_optionLineFour header_basketCount">0</span>
 
           </div>
 
